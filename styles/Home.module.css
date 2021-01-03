@@ -1,0 +1,61 @@
+@layer components {
+  .title {
+    font-family: "Yesteryear", sans-serif;
+    font-size: 8rem;
+  }
+
+  .big_positioning_landing {
+    display: none;
+  }
+
+  .small_landing {
+    display: block;
+    @apply mx-auto;
+  }
+
+  .landing_text {
+    @apply text-center;
+  }
+
+  .mojo_title {
+    @apply text-mojo_text ml-16;
+  }
+
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    .big_positioning_landing {
+      display: block;
+      @apply mx-auto;
+    }
+
+    .small_landing {
+      display: none;
+    }
+
+    .title {
+      font-size: 10rem;
+    }
+
+    .landing_text {
+      @apply text-4xl;
+    }
+  }
+
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .big_positioning_landing {
+      @apply mr-0 ml-60;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .big_positioning_landing {
+        @apply mx-0 relative;
+        left: 20%;
+      }
+
+    .title {
+      font-size: 12rem;
+    }
+  }
+}
