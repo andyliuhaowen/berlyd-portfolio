@@ -18,7 +18,7 @@
   }
 
   .mojo_title {
-    @apply text-mojo_text ml-16;
+    @apply text-mojo_text z-50 relative;
   }
 
   /* Medium devices (tablets, 768px and up) */
