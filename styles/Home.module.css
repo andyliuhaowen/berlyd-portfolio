@@ -4,7 +4,7 @@
     font-size: 8rem;
   }
 
-  .big_positioning_landing {
+  .big_positioning_title {
     display: none;
   }
 
@@ -18,14 +18,16 @@
   }
 
   .mojo_title {
+    font-family: "Yesteryear", sans-serif;
     @apply text-mojo_text z-50 relative;
+    font-size: 10rem;
+    white-space: nowrap;
   }
 
   /* Medium devices (tablets, 768px and up) */
   @media (min-width: 768px) {
-    .big_positioning_landing {
-      display: block;
-      @apply mx-auto;
+    .big_positioning_title {
+      @apply mx-auto inline-block;
     }
 
     .small_landing {
@@ -36,6 +38,10 @@
       font-size: 10rem;
     }
 
+    .mojo_title {
+      font-size: 13rem;
+    }
+
     .landing_text {
       @apply text-4xl;
     }
@@ -43,19 +49,23 @@
 
   /* Large devices (desktops, 992px and up) */
   @media (min-width: 992px) {
-    .big_positioning_landing {
+    .big_positioning_title {
       @apply mr-0 ml-60;
     }
   }
 
   @media (min-width: 1400px) {
-    .big_positioning_landing {
-        @apply mx-0 relative;
-        left: 20%;
-      }
+    .big_positioning_title {
+      @apply mx-0 relative;
+      left: 20%;
+    }
 
     .title {
       font-size: 12rem;
+    }
+
+    .mojo_title {
+      font-size: 15rem;
     }
   }
 }
