@@ -1,0 +1,77 @@
+.light {
+	background: #eee;
+}
+
+.light .gradient1 {
+  display: inline-block;
+  position: relative;
+  color: #000;
+  background: #fff;
+  mix-blend-mode: multiply;
+}
+
+.light .gradient1::before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: linear-gradient(to right,#23966c, #faaa54, #e23b4a, #db0768, #360670);
+		pointer-events: none;
+}
+
+.light .gradient1::before {
+  mix-blend-mode: screen;
+}
+
+
+.light .gradient2 {
+  display: inline-block;
+  position: relative;
+  color: #000;
+  background: #fff;
+  mix-blend-mode: multiply;
+}
+
+.light .gradient2::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: radial-gradient(circle, #23966c, #faaa54, #e23b4a, #db0768, #360670);
+  pointer-events: none;
+}
+
+.light .gradient2::before {
+  mix-blend-mode: screen;
+}
+
+
+/* Page styling, ignore */
+body {
+	margin: 0;
+	font-family: "Lato", sans-serif;
+	text-align: center;
+}
+
+ {
+	min-height: 50vh;
+	padding: 2em;
+}
+
+.gradient1 {
+	font-size: 96px;
+	margin: 0.5em;
+	opacity: 0.9;
+}
+
+.gradient2 {
+	text-align: center;
+	margin: 1em auto;
+	width: 10em;
+}
