@@ -10,5 +10,9 @@ class SectionHeaderProps {}
 export default function SectionHeader(
   props: React.PropsWithChildren<SectionHeaderProps>
 ) {
-  return <div className="text-3xl text-center mt-36 mb-16 font-bold">{props.children}</div>;
+  return (
+    <div className="text-2xl mt-24 mb-12 text-center font-bold md:text-3xl md:mt-36 md:mb-16">
+      {props.children}
+    </div>
+  );
 }
