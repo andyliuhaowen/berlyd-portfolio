@@ -14,7 +14,7 @@ export default function BannerHeader(
 ) {
   return (
     <div
-      className={`text-center bg-${props.color} mt-48 leading-loose py-6 text-4xl font-bold`}
+      className={`text-center bg-${props.color} mt-48 font-bold leading-loose py-6 text-3xl md:text-4xl md:leading-loose`}
     >
       {props.children}
     </div>
